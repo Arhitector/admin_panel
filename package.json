@@ -1,0 +1,25 @@
+{
+	"author"	: "Arhitector",
+	"name"		: "FrontEnd-Project",
+	"version"	: "0.0.1",
+	"homepage"	: "https://github.com/serheyShmyg/requirejs-jquery-backbone",
+	"repository": {
+		"type"	: "git",
+		"url"	: "https://github.com/serheyShmyg/requirejs-jquery-backbone.git"
+	},
+	"scripts": {
+		"start"			: "grunt",
+		"postinstall"	: "npm start"
+	},
+	"dependencies" : {
+		"grunt"						: "latest",
+		"grunt-cli"					: "latest",
+		"grunt-contrib-watch"		: "latest",
+		"grunt-contrib-clean"		: "latest",
+		"grunt-contrib-less"		: "latest",
+		"grunt-contrib-sass"		: "latest",
+		"grunt-contrib-connect"		: "latest",
+		"grunt-contrib-copy"		: "latest",
+		"grunt-contrib-jade"		: "latest"
+	}
+}

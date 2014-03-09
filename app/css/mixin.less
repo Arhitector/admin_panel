@@ -1,0 +1,93 @@
+// Hide block
+.hide() {
+  display: none;
+}
+
+// Hide conntent
+.hide-text() {
+  font: 0/0 a;
+  border: 0;
+  color: transparent;
+  background-color: transparent;
+  text-shadow: none;
+  .box-shadow(none);  
+}
+
+// Opacity
+.opacity(@opacity: 0.5) {
+  opacity: @opacity;
+  @opperc: @opacity * 100;
+  filter: ~"alpha(opacity=@{opperc})";
+}
+
+// 1px solid border
+.test-border() {
+  border: 1px solid #000;
+}
+
+// reset margin & padding
+.mpn (){
+margin: 0;
+padding: 0;
+}
+//reset ul
+.ulres(@mar: 0, @pad: 0){
+	list-style: none;
+	margin: @mar;
+	padding: @pad;
+}
+
+// Size
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+// Square
+.square(@size) {
+  width: @size;
+  height: @size;
+}
+
+// .box-sizing(VALUE); (border-box, padding-box, content-box)
+
+.box-sizing(@boxsize: border-box) {
+-webkit-box-sizing : @boxsize;
+-moz-box-sizing : @boxsize;
+-ms-box-sizing : @boxsize;
+box-sizing : @boxsize; }
+
+// .box-shadow(HORIZONTAL VERTICAL BLUR COLOR)
+
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+-webkit-box-shadow : @shadow;
+-moz-box-shadow : @shadow;
+box-shadow : @shadow; }
+
+// vertical-align
+
+.va{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+// border-radius(VALUE);
+
+.border-radius (@radius: 5px) {
+	webkit-border-radius:	@radius;
+	-moz-border-radius:		@radius;
+	border-radius:			@radius;
+
+	-moz-background-clip:	padding;
+	-webkit-background-clip:padding-box;
+	background-clip:		padding-box;
+}
+.background-gradient(@gradient){
+	background: -moz-linear-gradient(@gradient);
+	background: -webkit-gradient(@gradient);
+	background: -webkit-linear-gradient(@gradient);
+	background: -o-linear-gradient(@gradient);
+	background: -ms-linear-gradient(@gradient);
+	background: linear-gradient(@gradient);
+}

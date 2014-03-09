@@ -1,0 +1,31 @@
+extends ../exten/maintemp.jade
+
+block heading
+	.heading.back-gradient
+		.title-page.title-page__login
+			span.bolder watt
+			img(src="#{path_icons}light-bulb.png" alt='').title-page__bulb
+			|admin
+block content
+	.content
+		.float-box
+			.login-box.dark-gradient
+				.login-form_heading.dark-gradient
+					.login-form_heading_inner
+						img(src="#{path_icons}key.png").login-form_heading_image
+						|login
+				.login-box_inner
+					form.login-form
+						fieldset
+							.login-form_box-element
+								label.login-form_label Username
+								input(type="text").login-form_input
+								label.login-form_label Password
+								input(type="text").login-form_input
+								a.login-form_link Remember me ?
+								input(type="checkbox", checked).login-form_checkbox
+								a.login-form_link forgot password?
+							input(type="submit"  value="login").login-form_submit
+			.login-form_error
+				img(src="#{path_icons}error-icon.png").login-form_error_image
+				|Wrong username or password.

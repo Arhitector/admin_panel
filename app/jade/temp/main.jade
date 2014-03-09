@@ -1,0 +1,35 @@
+extends ../exten/maintemp.jade
+
+block heading
+	.heading_header-glow
+	.heading.heading__main-panel.back-gradient
+		.title-page.title-page__main-panel
+			span.bolder watt
+			img(src="#{path_icons}light-bulb.png" alt='').title-page__bulb
+			|admin
+		.heading_block-info
+			.heading_message
+				.heading_message_img-box
+					img(src="#{path_icons}open-letter.png" alt='').heading_message_img-box_image
+					em.hint.hint__h16.bg_color_orange.heading_message_img-box__hint 3
+				| 3 private messages received
+			+list("control_menu", Heading_Top_listMenu)
+	.block_information.back-gradient
+		+list("control_menu", menu_server_information, "control_menu_information")
+		form.search-form
+			input(type="text" placeholder="Your search...").search-form_input
+			input(type="submit" value="go").search-form_submit
+block content
+	.content
+		.main-menu_envelope
+			+list("main-menu", main_menu_array, "blue-gradient")
+		.icons-menu_envelope 
+			+list("icons-menu", icons_menu_array, "" )
+		.table-staff_box
+			h1.staff_box_title.blue-gradient Latest orders
+				a.staff_box_title_more View all orders
+			.table-staff-block
+				+table("table-staff", table_staff_array)
+				.table-staff-block_bottom
+					+pagination("pagination", pagination)
+					+list("small_navigation", small_navigation_menu, "")
