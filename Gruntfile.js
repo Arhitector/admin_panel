@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 			},
 			all : {
 				//src  : '<%= loc.css %>/index.less',
-				src  : '<%= loc.css %>/**/*.less',
+				src  : '<%= loc.css %>/index.less',
 				dest : '<%= loc.minCss %>'
 			}
 		},

@@ -1,7 +1,6 @@
 @import "include.less";
 .table-staff-block {
-	background-color: #fff;
-	padding: 19px 0 0;
+	&:extend(.after all);
 }
 .table-staff {
 	table-layout: auto;
@@ -13,6 +12,10 @@
 .table-staff_heading {
 	.table-staff_row {
 		background-color: transparent;
+		&:hover {
+			background-color: transparent;
+		}
+
 	}
 	.table-staff_cell {
 		font-weight: bold;
@@ -22,12 +25,14 @@
 		height: 14px;
 		position: relative;
 		top: -7px;
-		&:hover {
-			color: #000;
-		}
 		&.table-staff_actions {
 			padding-left: 20px;
 			width: 84px;
+		}
+		&.table-staff_title {
+			&:hover {
+				color: #000;
+			}
 		}
 	}
 }
@@ -55,7 +60,6 @@
 	color: #000;
 	font-size: 12px;
 	height: 27px;
-
 	&.table-staff_counter{
 		width: 3.3%;
 		padding-left: 15px;
@@ -93,17 +97,85 @@
 	&.table-staff_status {
 		padding-left: 21px;
 		width: 9.38%;
-		.table-staff_ico {
+		.table-staff_item_img {
 			float: right;
 			padding:2px 15px 0 0;
 		}
 	}
+
 	&.table-staff_actions {
-		padding: 0 9px 0 5px;
 		width: 9.6%;
 		border-right: none;
 	}
 }
 .table-staff_ico {
 	margin-left: 5px;
+}
+.table-staff__product {
+	width: auto;
+	margin-bottom: 17px;
+	.table-staff_heading {
+		.table-staff_cell{
+			line-height: 1px;
+			&:hover {
+				font-weight: bold;
+			}
+			&.table-staff_title {
+				padding: 0 0 0 18px;
+			}
+		}
+	}
+	.table-staff_cell{
+		&.table-staff_title {
+			width: 34.58%;
+			padding: 9px 0 10px 18px;
+			&:hover {
+				font-weight: normal;
+			}
+			.table-staff_item_img {
+				display: inline-block;
+				vertical-align: middle;
+				padding-right: 27px;
+			}
+			.table-staff_item_product-name {
+				color: #0071bb;
+				font-weight: bold;
+			}
+		}
+		&.table-staff_type {
+			width: 11.67%;
+		}
+		&.table-staff_price {
+			width: 11.25%;
+		}
+		&.table-staff_actions {
+			width: 29.58%;
+			.table-staff_item_img {
+				margin: 0 15px;
+			}
+			.table-staff_item_child {
+				font-weight: bold;
+				color: #0071bb;
+				padding-left: 33px;
+				margin-left: 15px;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+				&.table-staff_item_child__details{
+					background: url("@{icons}/table-icons/folder.png") 0 0 no-repeat;
+				}
+				&.table-staff_item_child__edit{
+					background: url("@{icons}/table-icons/icon_pen.png") 0 0 no-repeat;
+				}
+				&.table-staff_item_child__del{
+					background: url("@{icons}/table-icons/del.png") 0 0 no-repeat;
+				}
+			}
+		}
+		&.table-staff_sales {
+			width: 8.96%;
+			text-align: center;
+		}
+	}
 }

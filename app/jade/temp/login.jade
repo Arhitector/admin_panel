@@ -1,22 +1,22 @@
 extends ../exten/maintemp.jade
 
-block heading
-	.heading.back-gradient
-		.title-page.title-page__login
+block header
+	.heading.black-gradient
+		a.title-page.title-page__login
 			span.bolder watt
 			img(src="#{path_icons}light-bulb.png" alt='').title-page__bulb
 			|admin
 block content
 	.content
 		.float-box
-			.login-box.dark-gradient
-				.login-form_heading.dark-gradient
-					.login-form_heading_inner
-						img(src="#{path_icons}key.png").login-form_heading_image
-						|login
-				.login-box_inner
-					form.login-form
-						fieldset
+			form.login-box.dark-gradient
+				fieldset
+					.login-form_heading.dark-gradient.login-form_heading__key
+						.login-form_heading_inner
+							|login
+					.login-box_inner
+						.login-form
+						
 							.login-form_box-element
 								label.login-form_label Username
 								input(type="text").login-form_input
@@ -26,6 +26,5 @@ block content
 								input(type="checkbox", checked).login-form_checkbox
 								a.login-form_link forgot password?
 							input(type="submit"  value="login").login-form_submit
-			.login-form_error
-				img(src="#{path_icons}error-icon.png").login-form_error_image
+			.login-form_message.login-form_message__error 
 				|Wrong username or password.

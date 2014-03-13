@@ -3,25 +3,20 @@
   <head>
     <title>pageTitle</title>
     <link rel="stylesheet" href="../css/min.all.css"/>
-    <link rel="stylesheet" href="../css/reset.css"/>
-    <script src="../js/main.js"></script>
-    <script src="http://localhost:35729/livereload.js"></script>
   </head>
   <body>
     <div class="wrapper">
-      <div class="inner-wrap">
-        <div class="heading back-gradient">
-          <div class="title-page title-page__login"><span class="bolder">watt</span><img src="../images/icons/light-bulb.png" alt="" class="title-page__bulb"/>admin</div>
-        </div>
+      <div class="heading black-gradient"><a class="title-page title-page__login"><span class="bolder">watt</span><img src="../images/icons/light-bulb.png" alt="" class="title-page__bulb"/>admin</a></div>
+      <div class="content">
         <div class="content">
           <div class="float-box">
-            <div class="login-box dark-gradient">
-              <div class="login-form_heading dark-gradient">
-                <div class="login-form_heading_inner"><img src="../images/icons/key.png" class="login-form_heading_image"/>login</div>
-              </div>
-              <div class="login-box_inner">
-                <form class="login-form">
-                  <fieldset>
+            <form class="login-box dark-gradient">
+              <fieldset>
+                <div class="login-form_heading dark-gradient login-form_heading__key">
+                  <div class="login-form_heading_inner">login</div>
+                </div>
+                <div class="login-box_inner">
+                  <div class="login-form">
                     <div class="login-form_box-element">
                       <label class="login-form_label">Username</label>
                       <input type="text" class="login-form_input"/>
@@ -30,13 +25,15 @@
                       <input type="checkbox" checked="checked" class="login-form_checkbox"/><a class="login-form_link">forgot password?</a>
                     </div>
                     <input type="submit" value="login" class="login-form_submit"/>
-                  </fieldset>
-                </form>
-              </div>
-            </div>
-            <div class="login-form_error"><img src="../images/icons/error-icon.png" class="login-form_error_image"/>Wrong username or password.</div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+            <div class="login-form_message login-form_message__error">Wrong username or password.</div>
           </div>
         </div>
+      </div>
+      <div class="footer">
       </div>
     </div>
   </body>

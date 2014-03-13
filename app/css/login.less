@@ -35,11 +35,15 @@
 	text-transform: uppercase;
 	.border-radius(6px 6px 0 0);
 }
+.login-form_heading__key {
+	background: url("@{icons}/key.png") 14px 9px no-repeat;
+}
 .login-form_heading_inner {
 	margin: 1px 1px 0;
 	border: 1px solid #6d6d6d;
-	height: 29px;
-	padding: 7px 0 0 12px;
+	height: 36px;
+	line-height: 20px;
+	padding: 7px 0 0 35px;
 	.border-radius(6px 6px 3px 3px);
 }
 .login-form_heading_image {
@@ -48,6 +52,7 @@
 }
 .login-form {
 	padding: 23px 12px 6px;
+	position: relative;
 }
 .login-form_label {
 	color: #fff;
@@ -82,8 +87,9 @@
 	width: 244px;
 	height: 41px;
 	border: none;
-	position: relative;
-	left: -19px;
+	position: absolute;
+	left: -6px;
+	bottom: 0px;
 	color: #fefefe;
 	font-size: 15px;
 	padding: 0px 14px 6px 0;
@@ -96,11 +102,12 @@
 	}
 }
 .login-form_box-element {
-	padding-bottom: 16px;
+	padding-bottom: 46px;
 }
-.login-form_error {
+.login-form_message {
 	margin: 0 auto;
-	padding: 0 10px;
+	position: relative;
+	padding: 0 10px 0 32px;
 	width: 214px;
 	height: 40px;
 	line-height: 40px;
@@ -118,8 +125,13 @@
 	background: linear-gradient(to bottom,  rgba(255,228,198,1) 0%,rgba(255,221,183,1) 30%,rgba(255,218,174,1) 38%,rgba(255,200,136,1) 100%);
 	.border-radius (6px);
 }
-.login-form_error_image {
-	vertical-align: middle;
-	padding-right: 10px;
-	text-align: left;
+.login-form_message__error {
+	&:before {
+		content: "";
+		position: absolute;
+		top: 10px;
+		left: 18px;
+		background: url("@{icons}/error-icon.png") 0 0 no-repeat;
+		.square(22px);
+	}
 }

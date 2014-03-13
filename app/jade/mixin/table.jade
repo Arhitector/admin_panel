@@ -1,5 +1,5 @@
 mixin table (table_class, table_array, table_class_helper)
-	table(class=table_class)
+	table(class=table_class+" "+table_class_helper)
 		each item, i in table_array.massElem 
 			//- check if it isset head of table
 			case i
@@ -29,20 +29,32 @@ mixin check_for_object (table_class, item, key)
 		//- if it is NOT object go create element
 		+table_item(table_class, item, key)
 	else
-		//- if it is object check is it need additional class
-		if key.indexOf("add_class") != -1
-			//- if it is need additional class create span with it
-			span(class="#{item.additional_class}") #{item.val}
-		else
-			//- if element object run recursion
-			each item_deep, i in item
-				+check_for_object(table_class, item_deep, i)
+		+check_for_child(table_class, item, key)
+
+mixin check_for_child (table_class, item, key)
+	//- if it is object check is it need additional class
+	if key.indexOf("add_child") != -1
+		//- if it is need additional class create span with it
+		span(class="#{item.additional_class}") #{item.val}
+	else
+		+check_for_link(table_class, item, key)
+
+mixin check_for_link (table_class, item, key)
+	if key.indexOf("link") != -1
+		a(class="#{item.additional_class}" href="#") #{item.val}
+	else
+		//- if element object run recursion
+		each item_deep, i in item
+			+check_for_object(table_class, item_deep, i)
 
 //- ДАЛЬШЕ ИДЕТ ТРЕШ ТРЕБУЕТСЯ ПЕРЕРАБОТКА-ДОРАБОТКА
 mixin table_item (table_class, item, key)
 	if item.indexOf(".png") != -1 || item.indexOf(".jpg") != -1 || item.indexOf(".gif") != -1
-		a(href="#" class="#{table_class}"+"_ico")
-			img(src="#{item}")
+		if key.indexOf("no_link") != -1
+			img(src="#{item}" class="#{table_class}_item_img")
+		else
+			a(href="#" class="#{table_class}"+"_ico")
+				img(src="#{item}" class="#{table_class}_item_img")
 	else 
 		if key.indexOf("input") != -1
 			input(type=item)

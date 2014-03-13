@@ -92,6 +92,35 @@
 			}
 		}
 	},
+	"main_menu_array2":	{
+		"config": {}, 
+		"massElem": {
+			"item1": {
+				"val": "Dashboard"
+			}, 
+			"item2": {
+				"val": "Products"
+			}, 
+			"item3": {
+				"val": "Orders"
+			},
+			"item4": {
+				"val": "User accounts"
+			}, 
+			"item5": {
+				"val": "SEO settings"
+			}, 
+			"item6": {
+				"val": "Static pages"
+			}, 
+			"item7": {
+				"val": "Moderators"
+			}, 
+			"item8": {
+				"val": "Hosting"
+			}
+		}
+	},
 	"icons_menu_array": {
 		"config": {
 			"no_link": "no_link" 
@@ -164,7 +193,7 @@
 						"price": "$299.99",
 						"status": {
 							"val1": "Approved",
-							"src": "../images/icons/table-icons/check.png"
+							"src no_link": "../images/icons/table-icons/check.png"
 							},
 						"actions": {
 							"src": {
@@ -187,11 +216,11 @@
 						"data": "09/09/2010",
 						"price": "$299.99",
 						"status": {
-							"val1 add_class": {
+							"val1 add_child": {
 								"val": "Pending",
 								"additional_class": "color_red"
 							},
-							"src": "../images/icons/table-icons/watch.png"
+							"src no_link": "../images/icons/table-icons/watch.png"
 							},
 						"actions": {
 							"src": {
@@ -215,7 +244,7 @@
 						"price": "$299.99",
 						"status": {
 							"val1": "Approved",
-							"src": "../images/icons/table-icons/check.png"
+							"src no_link": "../images/icons/table-icons/check.png"
 							},
 						"actions": {
 							"src": {
@@ -239,7 +268,7 @@
 						"price": "$299.99",
 						"status": {
 							"val1": "Approved",
-							"src": "../images/icons/table-icons/check.png"
+							"src no_link": "../images/icons/table-icons/check.png"
 							},
 						"actions": {
 							"src": {
@@ -263,7 +292,7 @@
 						"price": "$299.99",
 						"status": {
 							"val1": "Approved",
-							"src": "../images/icons/table-icons/check.png"
+							"src no_link": "../images/icons/table-icons/check.png"
 							},
 						"actions": {
 							"src": {
@@ -287,7 +316,7 @@
 						"price": "$299.99",
 						"status": {
 							"val1": "Approved",
-							"src": "../images/icons/table-icons/check.png"
+							"src no_link": "../images/icons/table-icons/check.png"
 							},
 						"actions": {
 							"src": {
@@ -311,7 +340,7 @@
 						"price": "$299.99",
 						"status": {
 							"val1": "Approved",
-							"src": "../images/icons/table-icons/check.png"
+							"src no_link": "../images/icons/table-icons/check.png"
 							},
 						"actions": {
 							"src": {
@@ -335,7 +364,7 @@
 						"price": "$299.99",
 						"status": {
 							"val1": "Approved",
-							"src": "../images/icons/table-icons/check.png"
+							"src no_link": "../images/icons/table-icons/check.png"
 							},
 						"actions": {
 							"src": {
@@ -359,7 +388,7 @@
 						"price": "$299.99",
 						"status": {
 							"val1": "Approved",
-							"src": "../images/icons/table-icons/check.png"
+							"src no_link": "../images/icons/table-icons/check.png"
 							},
 						"actions": {
 							"src": {
@@ -408,6 +437,200 @@
 			"item3": {
 				"val": "Approve", 
 				"additional_class": "hover"
+			}
+		}
+	},
+	"table_staff_array2": {
+		"config": {
+		}, 
+		"massElem": {
+			"thead": {
+				"values":{
+					"counter": "No.",
+					"title": "Product",
+					"type": "ID",
+					"price": "Price",
+					"sales": "Sales",
+					"actions": "Actions"
+				}
+			}, 
+			"tbody":{
+				"item1": {
+					"values": {
+						"counter": "1.",
+						"title": {
+							"src no_link": "../images/img/img-site.jpg",
+							"val1 link": {
+								"val": "Product name goes right here",
+								"additional_class":"table-staff_item_product-name"
+							}
+						},
+						"type": "LZW-128",
+						"price": "$199.99",
+						"sales": "32",
+						"actions": {
+							"val1 link": {
+								"val": "Details",
+								"additional_class":"table-staff_item_child table-staff_item_child__details"
+							},
+							"val2 link": {
+								"val":"Edit",
+								"additional_class":"table-staff_item_child table-staff_item_child__edit"
+							},
+							"val3 link": {
+								"val": "Delete",
+								"additional_class":"table-staff_item_child table-staff_item_child__del"
+							}
+						}
+					}
+				},
+				"item2": {
+					"values": {
+						"counter": "2.",
+						"title": {
+							"src no_link": "../images/img/img-site.jpg",
+							"val1 link": {
+								"val": "Product name goes right here",
+								"additional_class":"table-staff_item_product-name"
+							}
+						},
+						"type": "LZW-128",
+						"price": "$199.99",
+						"sales": "452",
+						"actions": {
+							"val1 link": {
+								"val": "Details",
+								"additional_class":"table-staff_item_child table-staff_item_child__details"
+							},
+							"val2 link": {
+								"val":"Edit",
+								"additional_class":"table-staff_item_child table-staff_item_child__edit"
+							},
+							"val3 link": {
+								"val": "Delete",
+								"additional_class":"table-staff_item_child table-staff_item_child__del"
+							}
+						}
+					}
+				},
+				"item3": {
+					"values": {
+						"counter": "3.",
+						"title": {
+							"src no_link": "../images/img/img-site.jpg",
+							"val1 link": {
+								"val": "Product name goes right here",
+								"additional_class":"table-staff_item_product-name"
+							}
+						},
+						"type": "LZW-128",
+						"price": "$199.99",
+						"sales": "121",
+						"actions": {
+							"val1 link": {
+								"val": "Details",
+								"additional_class":"table-staff_item_child table-staff_item_child__details"
+							},
+							"val2 link": {
+								"val":"Edit",
+								"additional_class":"table-staff_item_child table-staff_item_child__edit"
+							},
+							"val3 link": {
+								"val": "Delete",
+								"additional_class":"table-staff_item_child table-staff_item_child__del"
+							}
+						}
+					}
+				},
+				"item4": {
+					"values": {
+						"counter": "4.",
+						"title": {
+							"src no_link": "../images/img/img-site.jpg",
+							"val1 link": {
+								"val": "Product name goes right here",
+								"additional_class":"table-staff_item_product-name"
+							}
+						},
+						"type": "LZW-128",
+						"price": "$199.99",
+						"sales": "1003",
+						"actions": {
+							"val1 link": {
+								"val": "Details",
+								"additional_class":"table-staff_item_child table-staff_item_child__details"
+							},
+							"val2 link": {
+								"val":"Edit",
+								"additional_class":"table-staff_item_child table-staff_item_child__edit"
+							},
+							"val3 link": {
+								"val": "Delete",
+								"additional_class":"table-staff_item_child table-staff_item_child__del"
+							}
+						}
+					}
+				},
+				"item5": {
+					"values": {
+						"counter": "5.",
+						"title": {
+							"src no_link": "../images/img/img-site.jpg",
+							"val1 link": {
+								"val": "Product name goes right here",
+								"additional_class":"table-staff_item_product-name"
+							}
+						},
+						"type": "LZW-128",
+						"price": "$199.99",
+						"sales": "221",
+						"actions": {
+							"val1 link": {
+								"val": "Details",
+								"additional_class":"table-staff_item_child table-staff_item_child__details"
+							},
+							"val2 link": {
+								"val":"Edit",
+								"additional_class":"table-staff_item_child table-staff_item_child__edit"
+							},
+							"val3 link": {
+								"val": "Delete",
+								"additional_class":"table-staff_item_child table-staff_item_child__del"
+							}
+						}
+					}
+				}
+			}
+			
+		}
+	},
+	"help_array": {
+		"config": {
+		},
+		"massElem": {
+			"pencil": {
+				"val": "This bar can be used for system messages and other neutral things.",
+				"src": "../images/icons/ico-help/pencil.png"
+			},
+			"error": {
+				"val": "This is a negative error message!",
+				"src": "../images/icons/ico-help/error.png"
+			},
+			"shield": {
+				"val": "This is a special security message.",
+				"src": "../images/icons/ico-help/shield.png"
+			},
+			"warning": {
+				"val": "This is a warning. Be careful!",
+				"src": "../images/icons/ico-help/warning.png"
+			},
+			"information": {
+				"val": "This is a reminder or a to do information.",
+				"src": "../images/icons/ico-help/bulb.png"
+			},
+			"system": {
+				"val": "This is a system maintenance message.",
+				"src": "../images/icons/ico-help/system.png"
 			}
 		}
 	}
